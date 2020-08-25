@@ -19,6 +19,7 @@ h2{	font-size: 1.5em; }
 	margin: 0 auto;
 	max-width: 1024px;
 	border: 1px solid #000;
+	font-family: 'Roboto', sans-serif;
 }
 /*********************************/
 /*Encabezado*/
@@ -26,11 +27,18 @@ h2{	font-size: 1.5em; }
 /*Color en degradado creado en http://www.colorzilla.com/gradient-editor/ */
 	padding: 20px;
 	height:60px;
+	background-color: mediumturquoise;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 
 #header h1 { 
 	margin: 0;
-	font-weight:300;	  
+	font-weight:300;
+	font-size: 3em;
+	text-align: center;
 }
 /*********************************/
 /*Menú*/
@@ -43,7 +51,9 @@ h2{	font-size: 1.5em; }
 #navigation ul {	
 	margin: 0;
 	padding: 0;
-	list-style-type: none;	
+	list-style-type: none;
+	overflow: hidden;
+	background-color: palegreen;
 }
 
 #navigation ul li {	display: inline; }
@@ -55,7 +65,7 @@ h2{	font-size: 1.5em; }
 	text-decoration: none;	
 }
 
-#navigation li a:hover { background:#FF0000; }
+#navigation li a:hover { background:darkcyan; }
 /*********************************/
 /*Contenido*/
 #content {
@@ -63,16 +73,22 @@ h2{	font-size: 1.5em; }
 	padding: 20px;
 }
 
-#content a { 
+#content a {
+	color: blue;
 	/* Color de los hipervinculos*/
 }
 
 #content h1 {		
-	padding-bottom: 10px;	
+	padding-bottom: 10px;
+	color: #3EAD8B;
+	font-family: 'Roboto', sans-serif;
+
 }
 
 #content h1, #content h2 {
-	margin: 0 0 1em 0;	
+	margin: 0 0 1em 0;
+	color: #3EAD8B;
+	font-family: 'Roboto', sans-serif;
 }
 /*********************************/
 /*Pie*/
@@ -97,6 +113,7 @@ h2{	font-size: 1.5em; }
 
 #footer ul li a {
 	text-decoration:none;
+	color: blue;
 }
 
 #footer ul li a:hover {	text-decoration:underline; }
@@ -110,7 +127,9 @@ h2{	font-size: 1.5em; }
 
 #alineado label{
 	width: 25%;
-	text-align: right;		
+	text-align: right;
+
+
 }
 
 #alineado label, 
@@ -118,6 +137,7 @@ h2{	font-size: 1.5em; }
 #alineado select, 
 #alineado textarea{
 	display:inline-block;
+
 }
 
 #alineado .chk{
@@ -137,4 +157,11 @@ label.chk input {
 
 #horizontal textarea, .horizontal select, .horizontal input, .horizontal label{
 	display:inline;
+
+}
+table th{
+	color: #3EAD8B;
+}
+button{
+	color: #3EAD8B;
 }
